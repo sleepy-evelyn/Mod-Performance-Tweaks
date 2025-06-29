@@ -21,8 +21,6 @@ configurations {
 
 repositories {
     // mavens for Create Fabric and dependencies
-    maven { url = "https://mvn.devos.one/releases" } // Porting Lib releases
-    maven { url = "https://mvn.devos.one/snapshots" } // Create and several dependencies
     maven { url = "https://maven.jamieswhiteshirt.com/libs-release" } // Reach Entity Attributes
     maven { url = "https://raw.githubusercontent.com/Fuzss/modresources/main/maven" } // Forge Config API Port
 
@@ -34,6 +32,9 @@ repositories {
     maven { url = "https://maven.shedaniel.me" } // Cloth Config, REI
     maven { url = "https://maven.blamejared.com" } // JEI
     maven { url = "https://maven.terraformersmc.com/releases" } // Mod Menu, EMI
+
+    maven { url = "https://mvn.devos.one/snapshots/" } // Create, Registrate
+    maven { url = "https://mvn.devos.one/releases" } // Porting Lib releases
 }
 
 configurations.configureEach {
@@ -66,12 +67,6 @@ dependencies {
         case "disabled": break
         default: println("Unknown recipe viewer specified: $fabric_recipe_viewer. Must be JEI, REI, EMI, or disabled.")
     }
-    // if you would like to add integration with them, uncomment them here.
-//    modCompileOnly("mezz.jei:jei-$minecraft_version-fabric:$jei_version")
-//    modCompileOnly("mezz.jei:jei-$minecraft_version-common:$jei_version")
-//    modCompileOnly("me.shedaniel:RoughlyEnoughItems-api-fabric:$rei_version")
-//    modCompileOnly("me.shedaniel:RoughlyEnoughItems-default-plugin-fabric:$rei_version")
-//    modCompileOnly("dev.emi:emi:$emi_version")
 }
 
 processResources {

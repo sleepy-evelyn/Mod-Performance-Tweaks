@@ -19,15 +19,16 @@ subprojects {
 
         // mavens used on both forge and fabric
         maven { url = "https://maven.blamejared.com/" } // JEI
-        maven { url = "https://maven.tterrag.com/" } // Flywheel on both, Create and Registrate on forge
+        maven { url = "https://api.modrinth.com/maven" } // Modrinth Maven
+
+        maven { url = "https://modmaven.dev/" } // Flywheel
     }
 
     dependencies {
         minecraft "com.mojang:minecraft:$minecraft_version"
         // Can't use parchment for some reason, game ends up completely unmapped
-        mappings loom.officialMojangMappings()
 
-        // see each subproject for more dependencies.
+        mappings loom.officialMojangMappings()
     }
 }
 
