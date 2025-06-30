@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "id": "examplemod",
+  "id": "mpt",
   "version": "${version}",
-  "name": "Example Mod",
+  "name": "Mod Performance Tweaks",
   "description": "This is an example description! Tell everyone what your mod is about!",
   "authors": [
-    "Me!"
+    "Sleepy_Evelyn"
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
@@ -16,12 +16,12 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.examplemod.fabric.ExampleModFabric"
+      "dev.mpt.fabric.MPTModFabric"
     ]
   },
   "mixins": [
-    "examplemod.mixins.json",
-    "examplemod-common.mixins.json"
+    "mpt.mixins.json",
+    "mpt-common.mixins.json"
   ],
   "depends": {
     "minecraft": "${minecraft_version}",

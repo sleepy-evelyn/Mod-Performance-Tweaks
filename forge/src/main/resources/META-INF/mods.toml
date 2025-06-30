@@ -4,10 +4,10 @@ loaderVersion = "[${forge_version},)"
 license = "Insert License Here"
 
 [[mods]]
-modId = "examplemod"
+modId = "mpt"
 version = "${version}"
-displayName = "Example Mod"
-authors = "Me!"
+displayName = "Mod Performance Tweaks"
+authors = "Sleepy_Evelyn"
 description = '''
 This is an example description! Tell everyone what your mod is about!
 '''

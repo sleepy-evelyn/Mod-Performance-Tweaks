@@ -22,11 +22,14 @@ subprojects {
         maven { url = "https://api.modrinth.com/maven" } // Modrinth Maven
 
         maven { url = "https://modmaven.dev/" } // Flywheel
+        maven { url = "https://maven.fzzyhmstrs.me/" } // Fzzy Config
     }
 
     dependencies {
         minecraft "com.mojang:minecraft:$minecraft_version"
         // Can't use parchment for some reason, game ends up completely unmapped
+
+        modImplementation "me.fzzyhmstrs:fzzy_config:${fzzy_config_version}"
 
         mappings loom.officialMojangMappings()
     }

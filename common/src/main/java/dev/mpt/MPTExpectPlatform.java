@@ -1,8 +1,8 @@
-package net.examplemod;
+package dev.mpt;
 
 import dev.architectury.injectables.annotations.ExpectPlatform;
 
-public class ExampleExpectPlatform {
+public class MPTExpectPlatform {
     /**
      * an example of {@link ExpectPlatform}.
      * <p>
