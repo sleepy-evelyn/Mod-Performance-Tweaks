@@ -5,11 +5,12 @@ import me.fzzyhmstrs.fzzy_config.config.ConfigSection;
 import net.minecraft.resources.ResourceLocation;
 
 import static dev.mpt.MPTMod.MOD_ID;
+import static dev.mpt.MPTMod.id;
 
 public class MPTConfig extends Config {
 
     public MPTConfig() {
-        super(new ResourceLocation(MOD_ID, "mpt_config"));
+        super(id("mpt_config"));
     }
 
     public CreateSection createSection = new CreateSection();
@@ -22,8 +23,10 @@ public class MPTConfig extends Config {
         public boolean disableTrainCollisions = false;
     }
 
+    /*
     @Override
     public int defaultPermLevel() {
         return 4;
     }
+    */
 }

@@ -13,6 +13,7 @@ public class MPTModFabric implements ModInitializer {
                 () -> () -> "{} is accessing Porting Lib on a Fabric client!",
                 () -> () -> "{} is accessing Porting Lib on a Fabric server!"
                 ), MPTMod.NAME);
+
         // on fabric, Registrates must be explicitly finalized and registered.
         MPTBlocks.REGISTRATE.register();
     }

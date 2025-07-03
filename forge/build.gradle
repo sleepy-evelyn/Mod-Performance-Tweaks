@@ -25,8 +25,10 @@ configurations {
 }
 
 repositories {
-    maven { url = "https://maven.createmod.net" }
     maven { url = "https://thedarkcolour.github.io/KotlinForForge/" } // (Neo)Forge - Fzzy Config
+    maven { url = "https://maven.createmod.net" }
+    maven { url = "https://raw.githubusercontent.com/Fuzss/modresources/main/maven/" } // ForgeConfigAPIPort
+    maven { url = "https://maven.ithundxr.dev/mirror" } // Registrate
 }
 
 dependencies {
@@ -36,6 +38,8 @@ dependencies {
 
     // Create and its dependencies
     modImplementation("com.simibubi.create:create-$minecraft_version:$create_forge_version:slim") { transitive = false }
+
+    modImplementation("net.createmod.ponder:Ponder-Forge-${minecraft_version}:${ponder_forge_version}")
 
     // Development QOL
     modLocalRuntime("mezz.jei:jei-$minecraft_version-forge:$jei_version") { transitive = false }

@@ -30,7 +30,6 @@ subprojects {
         // Can't use parchment for some reason, game ends up completely unmapped
 
         modImplementation "me.fzzyhmstrs:fzzy_config:${fzzy_config_version}"
-
         mappings loom.officialMojangMappings()
     }
 }
